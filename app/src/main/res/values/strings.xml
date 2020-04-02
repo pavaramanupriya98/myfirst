@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MoraSpirit</string>
+    <string name="overall">Overall</string>
+    <string name="sport">Sports</string>
+    <string name="university">Universities</string>
+    <string name="total">Total</string>
+    <string name="overallMen">Overall Men</string>
+    <string name="overallWomen">Overall Women</string>
+    <string name="selectYear">Select the Year</string>
+    <string name="sample_author">This is author</string>
+    <string name="sample_editor">This is editor</string>
+    <string name="sample_category">This is category</string>
+    <string name="sample_date">2019-06-09</string>
+    <string name="article_view_return">Return</string>
+    <string name="article_fragment_about">About</string>
+    <string name="channel_name_1">Articles</string>
+    <string name="channel_description_1">Notify about new articles that has been posted</string>
+    <string name="channel_name_2">Results</string>
+    <string name="channel_description_2">Notify about sports` results</string>
+    <string name="channel_name_3">Other</string>
+    <string name="channel_description_3">Other notifications</string>
+
+    <string name="facebook_app_id">2407730952775890</string>
+    <string name="fb_login_protocol_scheme">fb2407730952775890</string>
+    <string name="welcome">Welcome! MoraSpirit</string>
+    <string name="description1">Empowering University Sports in Sri Lanka</string>
+    <string name="description2">MoraSpirit, the leading light of university sports is in its way to create a full of pride, highly passionate sporting culture at university level in Sri Lanka.</string>
+
+
+</resources>

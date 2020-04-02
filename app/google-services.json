@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "814837275649",
+    "firebase_url": "https://moraspirit-4de55.firebaseio.com",
+    "project_id": "moraspirit-4de55",
+    "storage_bucket": "moraspirit-4de55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814837275649:android:9b072ff4a77b3be9",
+        "android_client_info": {
+          "package_name": "com.moraspirit.moraspiritapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814837275649-k44dog0kr1ge28upne853jqd5uaf01ei.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIPXcZK9xMOI8DBYhtGgxUk6SVMEaIhJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814837275649-k44dog0kr1ge28upne853jqd5uaf01ei.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

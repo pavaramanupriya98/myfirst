@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/materialCardView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="#45000000">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inside"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="65"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/default_image"
+                    android:transitionName="image" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_weight="15"
+                    android:background="@color/grayLight"
+                    app:layout_constraintEnd_toStartOf="@+id/caption"
+                    app:layout_constraintStart_toStartOf="@+id/caption">
+
+                    <TextView
+                        android:id="@+id/caption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textSize="@dimen/article_tile_caption"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="Open" />
+
+                        <Button
+                            android:id="@+id/share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:clickable="true"
+                            android:drawableLeft="@drawable/ic_share_black_24dp"
+                            android:focusable="true"
+                            android:text="Share" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100"
+                        android:gravity="end">
+
+                        <LinearLayout
+                            android:id="@+id/authorContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/author"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:transitionName="authorContainer"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+                            <!--max author length 22-->
+                            <TextView
+                                android:id="@+id/author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="marquee"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:textColor="@color/black"
+                                android:textSize="15dp"
+                                android:transitionName="author" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/red_bookmark"
+                app:layout_constraintBottom_toBottomOf="@+id/inside"
+                app:layout_constraintEnd_toEndOf="@+id/inside"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/inside"
+                app:layout_constraintTop_toTopOf="@+id/inside"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:shadowColor="#55000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="8"
+                android:text="EVENT"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/bookmark"
+                app:layout_constraintEnd_toEndOf="@+id/bookmark"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/bookmark"
+                app:layout_constraintTop_toTopOf="@+id/bookmark"
+                app:layout_constraintVertical_bias="0.2" />
+
+            <ImageView
+                android:id="@+id/dateImage"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/date"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.55" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:shadowColor="#55000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="8"
+                android:text="2019-08-09"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/dateImage"
+                app:layout_constraintEnd_toEndOf="@id/dateImage"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/dateImage"
+                app:layout_constraintTop_toTopOf="@id/dateImage"
+                app:layout_constraintVertical_bias="0.2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

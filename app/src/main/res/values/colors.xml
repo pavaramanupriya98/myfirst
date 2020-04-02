@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<resources>
+    <color name="colorPrimary">#b71c1c</color>
+    <color name="colorPrimaryLight">#f05545</color>
+    <color name="colorPrimaryDark">#7F0000</color>
+    <color name="colorPrimaryText">#ffffff</color>colorAccent
+    <color name="colorAccent">#7a0e0e</color>
+    <color name="colorSecondaryDark">#ffffff</color>
+    <color name="inactiveColor">#3B6F0303</color>
+    <color name="overlay">#D5FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="holderPoints">#232323</color>
+    <color name="holderText">#27585C</color>
+    <color name="gray">#C6EEEEEE</color>
+    <color name="grayLight">#C6F5F5F5</color>
+    <color name="authorBg">#BFB4B4B4</color>
+    <color name="iconColor">#FFFFFF</color>
+    <color name="ripple">#000000</color>
+    <color name="categoryBgRed">#5CFFA8A8</color>
+    <color name="categoryBgGreen">#C9FFBA</color>
+    <color name="dateBg">#81B3ECFF</color>
+    <color name="winnerColor">#92F05545</color>
+    <color name="aboutBg">#B7FFAEA7</color>
+
+
+</resources>
